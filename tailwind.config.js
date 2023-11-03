@@ -1,0 +1,55 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    darkMode: ["class"],
+    theme: {
+        extend: {
+            fontSize: {
+                MainFontsizeOverviewCardHeadings: "14px",
+            },
+            colors: {
+                "primary-LimeGreen": "hsl(163, 72%, 41%)",
+                "primary-BrightRed": "hsl(356, 69%, 56%)",
+                "primary-Facebook": "hsl(208, 92%, 53%)",
+                "primary-Twitter": "hsl(203, 89%, 53%)",
+                "primary-InstagramFrom": "hsl(37, 97%, 70%)",
+                "primary-InstagramTo": "hsl(329, 70%, 58%)",
+                "primary-YouTube": "hsl(348, 97%, 39%)",
+                "Dark-ToggleFrom": "hsl(210, 78%, 56%)",
+                "Dark-ToggleTo": "hsl(146, 68%, 55%)",
+                "Light-Toggle": "hsl(230, 22%, 74%)",
+                "Dark-VeryDarkBlue-BG": "hsl(230, 17%, 14%)",
+                "Dark-VeryDarkBlueTop-BG-Pattern": "hsl(232, 19%, 15%)",
+                "Dark-DarkDesaturatedBlue-Card-BG": "hsl(228, 28%, 20%)",
+                "Dark-DarkDesaturatedBlue-hover-Card-BG": "#333a56",
+                "Dark-DesaturatedBlue-Text": "hsl(228, 34%, 66%)",
+                "Dark-White-Text": "hsl(0, 0%, 100%)",
+                "Light-WhiteBG": "hsl(0, 0%, 100%)",
+                "Light-VeryPaleBlueTop-BG-Pattern": "hsl(225, 100%, 98%)",
+                "Light-LightGrayishBlue-Card-BG": "hsl(227, 47%, 96%)",
+                "Light-LightGrayishBlue-hover-Card-BG": "#e1e3f0",
+                "Light-DarkGrayishBlue-Text": "hsl(228, 12%, 44%)",
+                "Light-VeryDarkBlue-Text": "hsl(230, 17%, 14%)",
+            },
+            screens: {
+                sm: "576px",
+                md: "768px",
+                lg: "992px",
+                xl: "1200px",
+                "2xl": "1400px",
+            },
+            container: {
+                center: true,
+                padding: "15px",
+                screens: {
+                    sm: "540px",
+                    md: "720px",
+                    lg: "960px",
+                    xl: "1140px",
+                    "2xl": "1320px",
+                },
+            },
+        },
+    },
+    plugins: [],
+};

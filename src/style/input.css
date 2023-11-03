@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    body {
+        font-family: "Inter", sans-serif;
+    }
+    .theme-switcher {
+        background-image: linear-gradient(
+            45deg,
+            hsl(208, 92%, 53%) 25%,
+            hsl(163, 72%, 41%) 75%
+        );
+    }
+    .theme-switcher.change-theme > .ball {
+        transform: translate(23px, -50%);
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(
+            45deg,
+            hsl(163, 72%, 41%),
+            hsl(208, 92%, 53%)
+        );
+    }
+}
